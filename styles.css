@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'HankenGrotesk', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 50%;
+    border-radius: 1.5rem;
+    box-shadow: 10px 34px 98px -19px rgba(156,173,244,0.75);
+    -webkit-box-shadow: 10px 34px 98px -19px rgba(156,173,244,0.75);
+    -moz-box-shadow: 10px 34px 98px -19px rgba(156,173,244,0.75);
+}
+
+main div{
+    width: 50%;
+}
+
+.result-container {
+    box-sizing: border-box;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.8rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.result-container h2{
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.result-container p{
+    font-size: 0.9rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.result-container .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.result-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: hsl(241, 100%, 89%);
+}
+
+.result-circle {
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(241, 100%, 80%);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    font-size: 0.8rem;
+}
+
+.result-circle h1{
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.summary-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.summary-container h2{
+    color: hsl(224, 30%, 27%);
+    font-size: 1.2rem;
+}
+
+.summary-list {
+    list-style-type: none;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.summary-list-item {
+    padding: 0.9rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    color: hsl(224, 30%, 27%);
+    text-align: end;
+}
+
+.summary-list-item span{
+    color: #9b9b9b;
+}
+
+.summary-list-item  img{
+    margin-right: 0.5rem;
+}
+
+.summary-list-item  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.reaction-item{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.reaction-item h1{
+    color: hsl(0, 100%, 67%);
+}
+
+.memory-item{
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.memory-item h1{
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal-item{
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.verbal-item h1{
+    color: hsl(166, 100%, 37%);
+}
+
+.visual-item{
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.visual-item h1{
+    color: hsl(234, 85%, 45%);
+}
+
+.summary-container button{
+    border: 0 solid transparent;
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color:#fff;
+}
+
+.summary-container button:hover{
+    cursor: pointer;
+    background: hsl(224, 30%, 27%);
+}
+
+@media only screen and (max-width: 375px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    main div{
+        width: 100%;
+    }
+
+    .result-circle {
+        background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: hsl(241, 100%, 80%);
+        width: 6rem;
+        height: 6rem;
+        border-radius: 5rem;
+        font-size: 0.5rem;
+    }
+
+    .result-circle h1{
+        font-size: 2rem;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .result-container h2{
+        font-size: 1rem;
+        color: #fff;
+    }
+  }
